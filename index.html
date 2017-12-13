@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Jeff Hollan</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="app">
+		<!-- Header -->
+		<header id="header" class="alt">
+			<div class="logo">
+				<a href="https://twitter.com/jeffhollan">Follow
+					<span>on Twitter</span>
+				</a>
+			</div>
+		</header>
+
+		<!-- Banner -->
+
+		<section id="banner">
+			<div class="inner">
+				<header>
+					<h1>Jeff Hollan</h1>
+					<p>Program Manager for the Microsoft Cloud
+						<br />working on Azure Functions.</p>
+				</header>
+				<a href="https://medium.com/@jeffhollan" class="button big scrolly">Read Blog</a>
+			</div>
+		</section>
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Section -->
+			<section class="wrapper style1">
+				<div class="inner">
+					<!-- 2 Columns -->
+					<div class="flex flex-2">
+						<div class="col col1">
+							<div class="image round fit">
+								<a href="https://twitter.com/jeffhollan" class="link">
+									<img src="images/profile.jpg" alt="Jeff Hollan profile pic" />
+								</a>
+							</div>
+						</div>
+						<div class="col col2">
+							<h3>Passionate about people and technology</h3>
+							<p>Jeff Hollan started his career at Microsoft in IT. After spending a few years managing and building enterprise applications,
+								he transitioned to be an engineering program manager inside of Microsoft Azure.</p>
+							<p>Currenty he works as a Sr. Program Manager for Serverless Azure Functions. He is always developing and shipping solutions
+								on the latest and greatest tech, and is passionate about speaking at conferences around the world.</p>
+							<a href="https://linkedin.com/in/jeffhollan" class="button" v-vpshow>Learn More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section>
+				<v-parallax src="images/fiber-optic-cables-blur.jpg" height="200"></v-parallax>
+			</section> -->
+			<section class="wrapper style1">
+				<div class="inner">
+					<h3>Recent Blog Posts</h3>
+					<div id="blog">
+						<div v-show="loading" style="font-size: xx-large">
+							<i class="fa fa-spinner fa-spin"> </i> Loading posts....
+						</div>
+
+						<div v-for="post in posts" class="post">
+
+							<a v-bind:href="post.blogUrl">
+								<span class="image left">
+									<img v-if="post.imageUrl" v-bind:src="post.imageUrl" alt="blog post image" />
+								</span>
+								<h4>{{ post.title }}</h4>
+							</a>
+							<p>{{ post.subtitle }}</p>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br clear="left" />
+
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="copyright">
+				<ul class="icons">
+					<li>
+						<a href="https://twitter.com/jeffhollan" class="icon fa-twitter">
+							<span class="label">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/jeffhollan" class="icon fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/jeffhollan" class="icon fa-github">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://medium.com/@jeffhollan" class="icon fa-medium">
+							<span class="label">Medium</span>
+						</a>
+					</li>
+				</ul>
+				<div class="copyright">
+					<h3>Powered by
+						<a href="https://azure.com/serverless">Azure Serverless</a>
+					</h3>
+					<div id="stats">
+						<div v-show="stats.loading" style="font-size: 18px">
+							<i class="fa fa-spinner fa-spin"> </i> Calculating servers...
+						</div>
+						<div >
+							<p v-if="stats.saved" style="color: #0d0d0d; font-size: 18px">Saved
+								<span>${{ stats.saved }}</span> this year by hosting without servers.
+								<a href="https://azure.com">Learn more</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<p>&copy; Jeff Hollan 2018. All rights reserved. Design:
+					<a href="https://templated.co">templated</a>. Images:
+					<a href="https://unsplash.com">Unsplash</a>.</p>
+			</div>
+
+
+		</footer>
+
+
+
+	</div>
+	<!-- Scripts -->
+	<script src="https://use.fontawesome.com/3e8250d68a.js"></script>
+	<script src="https://unpkg.com/vue@2.5.9/dist/vue.js"></script>
+	<script src="https://unpkg.com/vuetify@0.17.4/dist/vuetify.js"></script>
+	<script src="https://unpkg.com/axios@0.17.1/dist/axios.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
