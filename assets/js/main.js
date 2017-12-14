@@ -41,6 +41,9 @@ var app = new Vue({
     ],
     stats: {
       loading: true
+    },
+    meta: {
+      year: new Date().getFullYear()
     }
   },
 	created () {
