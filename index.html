@@ -131,15 +131,18 @@
 						<div v-show="stats.loading" style="font-size: 18px">
 							<i class="fa fa-spinner fa-spin"> </i> Calculating servers...
 						</div>
-						<div >
+						<div>
 							<p v-if="stats.saved" style="color: #0d0d0d; font-size: 18px">Saved
 								<span>${{ stats.saved }}</span> this year by hosting without servers.
-								<a href="https://azure.com">Learn more</a>.
+								<a href="https://azure.com/serverless">Learn more</a>.
 							</p>
 						</div>
 					</div>
 				</div>
-				<p>&copy; Jeff Hollan 2018. All rights reserved. Design:
+				<p>&copy; Jeff Hollan
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>. All rights reserved. Design:
 					<a href="https://templated.co">templated</a>. Images:
 					<a href="https://unsplash.com">Unsplash</a>.</p>
 			</div>
