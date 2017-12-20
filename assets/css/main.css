@@ -2232,7 +2232,9 @@
 		}
 
 			.image.left img, .image.right img {
-				width: 100%;
+				max-width: 100%;
+				max-height: 200px;
+				height: auto;
 			}
 
 		.image.left {
@@ -2866,6 +2868,10 @@
 				border-color: rgba(0, 0, 0, 0.15);
 			}
 
+		.wrapper.style3 {
+			background-color: white;
+			color: #000000;
+		}
 		.wrapper.style2 {
 			background-color: #3498db;
 			color: #aed6f1;
@@ -3564,6 +3570,7 @@
 			width: 50%;
 			float: left;
 			padding: 1em 0 0 1em;
+			height: 300px;
 		}
 
 		.post h4 {
