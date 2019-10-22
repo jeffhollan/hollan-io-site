@@ -36,7 +36,7 @@
 					<p>Program Manager for the Microsoft Cloud
 						<br />working on Azure Functions.</p>
 				</header>
-				<a href="https://medium.com/@jeffhollan" class="button big scrolly">Read Blog</a>
+				<a href="https://dev.to/jeffhollan" class="button big scrolly">Read Blog</a>
 			</div>
 		</section>
 
@@ -60,7 +60,7 @@
 							<h3>Passionate about people and technology</h3>
 							<p>Jeff Hollan started his career at Microsoft in IT. After spending a few years managing and building enterprise applications,
 								he transitioned to be an engineering program manager inside of Microsoft Azure.</p>
-							<p>Currenty he works as a Sr. Program Manager for Serverless Azure Functions. He is always developing and shipping solutions
+							<p>Currently he works as Principal PM Manager for Serverless Azure Functions. He is always developing and shipping solutions
 								on the latest and greatest tech, and is passionate about speaking at conferences around the world.</p>
 							<a href="https://linkedin.com/in/jeffhollan" class="button" v-vpshow>Learn More</a>
 						</div>
@@ -81,9 +81,11 @@
 						<div v-for="post in posts" class="post">
 
 							<a v-bind:href="post.blogUrl">
-								<span class="image left">
-									<img v-if="post.imageUrl" v-bind:src="post.imageUrl" alt="blog post image" />
-								</span>
+								<div v-if="post.imageUrl">
+									<span class="image left">
+										<img v-if="post.imageUrl" v-bind:src="post.imageUrl" alt="blog post image" />
+									</span>
+								</div>
 								<h4>{{ post.title }}</h4>
 							</a>
 							<p>{{ post.subtitle }}</p>
